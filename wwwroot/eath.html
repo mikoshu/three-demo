@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>eath</title>
+</head>
+<body>
+	<script src="js/jquery.10.2.min.js"></script>
+	<script src="js/three.js"></script>
+	<script src="js/TrackballControls.js"></script>
+
+	<script src="js/eath.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			if (indexF.ieVersion() == 'FF' || webkit >= 45 ||  indexF.ieVersion() > 10) {
+                try {
+                    var globalEarth = new global();
+                }catch (err){
+                	console.log(err)
+                }
+                
+                
+            }else {
+            	console.log('no')	
+            }
+		})
+	</script>
+</body>
+	
+</html>
